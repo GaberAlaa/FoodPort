@@ -1,0 +1,58 @@
+:root {
+  --background-light: hsl(0 0%100%);
+  --background: hsl(0 0%95%);
+  --background-dark: hsl(0 0%90%);
+
+  --main-font: hsl(0 0%5%);
+  --muted-font: hsl(0 0%30%);
+
+  --primary: #d62828;
+  --secoundary: #;
+}
+body {
+  background-color: var(--background);
+  font-family: "Roboto", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.nav-bar {
+  background-color: var(--background-light);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+  gap: 1rem;
+}
+.nav_links a {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: var(--main-font);
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.nav_links a:hover {
+  background-color: var(--background-dark);
+  color: var(--primary);
+  text-decoration: none;
+  transition: 0.3s;
+}
+#logo {
+  margin-left: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 3rem;
+  color: var(--primary);
+  text-decoration: none;
+  padding-left: 1rem;
+}
